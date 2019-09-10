@@ -1,0 +1,65 @@
+.newsletter {
+  width: 100%;
+  min-height: 500px;
+  display: flex;
+
+  &__image {
+    background: url("../images/media/girl-2.jpg");
+    background-size: cover;
+    background-position: top center;
+  }
+
+  &__content {
+    width: 70%;
+    padding: $md-space;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: $bcg-clr-1;
+
+    @media #{$max575} {
+      padding: $md-space $sm-space;
+    }
+  }
+
+  &__text {
+    max-width: 800px;
+    margin-bottom: 50px;
+  }
+
+  &__form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  &__input {
+    margin-bottom: 50px;
+    padding: 16px 10px;
+    border: none;
+    border-radius: 5px;
+    font-family: main-font-reg;
+    font-size: 18px;
+
+    @media #{$max575} {
+      font-size: 16px;
+    }
+
+    &--email {
+      width: 400px;
+      background-color: $bcg-clr-3;
+      outline-color: $bcg-clr-2;
+    }
+
+    &--submit {
+      width: 140px;
+      margin-left: $md-space;
+      margin-right: $md-space;
+      background-color: $good-clr;
+      font-family: main-font-reg;
+      color: $text-clr;
+    }
+  }
+}

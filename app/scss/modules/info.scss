@@ -1,0 +1,23 @@
+.info {
+  padding: $md-space;
+  font-size: 20px;
+  background-color: $bcg-clr-3;
+
+  @media #{$max575} {
+    padding: $md-space $sm-space;
+  }
+
+  &__text {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: $md-space 0;
+
+    @media #{$max767} {
+      font-size: 16px;
+    }
+
+    @media #{$max575} {
+      padding: $md-space 0;
+    }
+  }
+}

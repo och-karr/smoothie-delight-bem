@@ -1,0 +1,24 @@
+.title {
+    font-family: title-font-bold;
+    font-size: 52px;
+    text-align: center;
+    color: $title-clr;
+
+    @media #{$max767} {
+      font-size: 40px;
+    }
+}
+
+.title--big {
+    font-size: 80px;
+}
+
+.basic-text {
+    font-family: main-font-reg;
+    color: $text-clr;
+    font-size: 20px;
+
+    @media #{$max767} {
+      font-size: 16px;
+    }
+}

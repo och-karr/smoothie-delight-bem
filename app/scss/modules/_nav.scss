@@ -1,0 +1,116 @@
+.nav {
+    height: 70px;
+    padding: $sm-space $md-space;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $bcg-clr-2;
+    color: $text-clr;
+    z-index: 5;
+
+    @media #{$max575} {
+        padding: $sm-space;
+    }
+
+    &__icon-item {
+        &--displaying {
+            display: none;
+    
+            @media #{$max575} {
+                display: block;
+            }
+        }
+        &--shift {
+            padding-left: $sm-space;
+        }
+    }
+
+    &__icon {
+        font-size: 24px;
+        color: $text-clr;
+        cursor: pointer;
+
+        @media #{$max767} {
+            font-size: 20px;
+        }
+    }
+
+    &__logo {
+
+        @media #{$max575} {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    &__logo-title {
+        width: 55px;
+        height: 55px;
+        margin-right: $md-space;
+        padding: 5px;
+        display: inline-block;
+        font-family: title-font-bold;
+        font-size: 32px;
+        line-height: 45px;
+        background-color: white;
+        border-radius: 50%;
+
+        @media #{$max575} {
+            margin-right: 0;
+        }
+    }
+
+    &__list {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+
+        @media #{$max575} {
+            position: absolute;
+            top: 70px;
+            left: 0;
+            flex-direction: column;
+        }
+    }
+
+    &__item {
+
+        @media #{$max575} {
+            height: 50px;
+            display: flex;
+            align-items: center;
+            background-color: $bcg-clr-2; 
+        }
+    }
+
+    &__item-link {
+        padding: 0 $xs-space;
+        line-height: 22px;
+        font-family: main-font-bold;
+
+        @media #{$max767} {
+            font-size: 14px;
+        }
+
+        @media #{$max575} {
+            font-size: 16px;
+        }
+    }
+
+    .nav__list--mobile-close {
+        left: 0;
+        transition: all .2s;
+    }
+
+    .nav__list--mobile-close {
+        left: -100%;
+        transition: all .2s;
+    }
+
+    &__icons {
+        display: flex;
+    }
+}

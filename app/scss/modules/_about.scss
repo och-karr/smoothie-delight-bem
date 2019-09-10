@@ -1,0 +1,57 @@
+.about {
+  min-height: 500px;
+  display: flex;
+
+  @media #{$max1199} {
+    min-height: auto;
+  }
+
+  &__text-container {
+    width: 70%;
+    padding: $md-space;
+    background-color: $bcg-clr-1;
+
+    @media #{$max1199} {
+      width: 60%;
+    }
+
+    @media #{$max575} {
+      width: 100%;
+      padding: $md-space $sm-space;
+    }
+  }
+
+  &__title {
+    padding-bottom: $sm-space;
+    color: $title-clr;
+
+    @media #{$max767} {
+      font-size: 42px;
+    }
+  }
+
+  &__item {
+    padding: $sm-space 0 0 $xs-space;
+    position: relative;
+    display: block;
+    z-index: 2;
+
+    &::before {
+      @include list-dot(30px, -10px);
+    }
+  }
+
+  &__image {
+    background: url("../images/media/girl-1.jpg");
+    background-size: cover;
+    background-position: top center;
+
+    @media #{$max1199} {
+      width: 40%;
+    }
+
+    @media #{$max575} {
+      display: none;
+    }
+  }
+}

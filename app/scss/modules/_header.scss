@@ -1,0 +1,41 @@
+.header {
+    height: 70vh;
+    position: relative;
+    background: url(../images/media/header-bcg.jpg);
+    background-size: cover;
+
+    @media #{$max575} {
+        height: 50vh;
+    }
+
+    &__title-container {
+        position: absolute;
+        top: 40%;
+        left: $md-space;
+        padding-right: $sm-space;
+
+        @media #{$max575} {
+            left: $sm-space;
+        }
+    }
+
+    &__title {
+        padding-bottom: $xs-space;
+
+        @media #{$max991} {
+            font-size: 70px;
+        }
+
+        @media #{$max575} {
+            font-size: 52px;
+        }
+    }
+
+    &--big {
+        font-size: 24px;
+
+        @media #{$max575} {
+            font-size: 18px;
+        }
+    }
+}
